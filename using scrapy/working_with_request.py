@@ -21,9 +21,10 @@ sel = Selector(text = html)
 
 ## using text
 print(sel.xpath('//p[@id="p-example"]/text()').extract())
-
+##include generations 
 print(sel.xpath('//p[@id="p-example"]//text()').extract())
 
 ##  using css locator
 print(sel.css('p#p-example::text').extract())
+##includes generations
 print(sel.css('p#p-example ::text').extract())
